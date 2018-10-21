@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BackIn30Mins
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var hrs = int.Parse(Console.ReadLine());
+            var mins = int.Parse(Console.ReadLine());
+
+            mins += 30;
+            while (mins >= 60)
+            {
+                mins -= 60;
+                hrs++;
+            }
+
+            while (hrs >= 24)
+            {
+                hrs -= 24;
+            }
+
+            Console.WriteLine("{0:0}:{1:D2}", hrs, mins);
+
+        }
+    }
+}

@@ -1,0 +1,26 @@
+The integer will be in the interval [1…100]
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MultiplicationTable2._0
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var n = int.Parse(Console.ReadLine());
+            var multiplier = int.Parse(Console.ReadLine());
+
+            do
+            {
+                Console.WriteLine("{0} X {1} = {2}", n, multiplier, n * multiplier);
+                multiplier++;
+            }
+            while (multiplier <= 10);
+
+        }
+    }
+}
